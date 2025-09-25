@@ -952,10 +952,10 @@ else:
 #     print("No valid data was found for the specified date range.")
 
 # %%
-final_df.tail(25)
+#final_df.tail(25)
 
 # %%
-final_df.shape
+#final_df.shape
 
 # %%
 # Create the new column and initialize it with an empty string
@@ -966,7 +966,7 @@ final_df.loc[final_df['Ora intrare'].isnull(), 'De verificat'] = 'Ora inceput'
 
 # Fill with 'b' where 'Ora iesire' is missing
 final_df.loc[final_df['Ora iesire'].isnull(), 'De verificat'] = 'Ora sfarsit'
-final_df.tail(25)
+#final_df.tail(25)
 
 # %%
 # Aggregate the data to get the total and average work time for each person
@@ -984,7 +984,7 @@ agregat_df = agregat_df.rename(columns={
 })
 
 # %%
-agregat_df
+#agregat_df
 
 # %%
 # Create the filename using the start and end dates
